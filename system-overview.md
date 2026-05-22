@@ -6,109 +6,127 @@ The system supports both web and mobile platforms to increase accessibility for 
 
 2. System Objectives
 The main objectives of SpeedFood are:
-Help users save time and effort when ordering food.
-Provide a convenient food ordering experience through web and mobile applications.
-Support realtime order processing and delivery updates.
-Allow delivery drivers to receive and manage orders efficiently.
-Build a scalable food delivery platform architecture using modern technologies.
+-Help users save time and effort when ordering food.
+-Provide a convenient food ordering experience through web and mobile applications.
+-Support realtime order processing and delivery updates.
+-Allow delivery drivers to receive and manage orders efficiently.
+Build a scalable food delivery platform architecture using modern technologies.
 
 3. System Actors
 3.1 Guest
 Guests can:
-Browse food items
-Search foods
-View categories
-View food details
+-Browse food items
+-Search foods
+-View categories
+-View food details
 Guests are not allowed to place orders until they create an account and log in.
 
 
 3.2 Customer
 Customers can:
-Register and log in
-Browse foods
-Search foods by category or keyword
-Add foods to cart
-Place orders
-Select payment methods
-Track order status in realtime
-View order history
+-Register and log in
+-Browse foods
+-Search foods by category or keyword
+-Add foods to cart
+-Place orders
+-Select payment methods
+-Track order status in realtime
+-View order history
 
 3.3 Delivery
 Delivery drivers are responsible for handling delivery operations.
 Delivery drivers can:
-Receive realtime order notifications
-Accept available orders
-View assigned orders
-Update delivery status
-Deliver food to customers
+-Receive realtime order notifications
+-Accept available orders
+-View assigned orders
+-Update delivery status
+-Deliver food to customers
 Delivery drivers can access the platform using mobile applications.
 
 3.4 Admin
 Admins manage the overall system.
 Admins can:
-Manage users
-Manage staffs
-Manage foods
-Manage categories
-Monitor orders
-Update system information
+-Manage users
+-Manage staffs
+-Manage foods
+-Manage categories
+-Monitor orders
+-Update system information
 
 
 
 4. Main Features
 Authentication System
-JWT-based authentication
-Role-based authorization
-Secure login and registration
+-JWT-based authentication
+-Role-based authorization
+-Secure login and registration
 
 Food Browsing System
-Browse food items
-Search foods
-Filter by categories
-View food details
+-Browse food items
+-Search foods
+-Filter by categories
+-View food details
 
 Cart System
-Add foods to cart
-Update quantities
-Remove items from cart
-Calculate total price
+-Add foods to cart
+-Update quantities
+-Remove items from cart
+-Calculate total price
 
 Order System
-Create orders
-Realtime order processing
-Staff assignment
-Order status tracking
+-Create orders
+-Realtime order processing
+-Staff assignment
+-Order status tracking
 
 Delivery Management
-Broadcast new orders to available staffs
-Staff order acceptance system
-Delivery status updates
+-Broadcast new orders to available staffs
+-Staff order acceptance system
+-Delivery status updates
 
 
 
 Payment System
 Supported payment methods:
-Cash on Delivery (COD)
-Bank Transfer
-5.Architecture Overview
+-Cash on Delivery (COD)
+-Bank Transfer
+
+5. Architecture Overview
+SpeedFood follows a multi-platform client-server architecture.
+
+The system consists of:
+-React Admin Web Application
+-Flutter Mobile Application
+-REST API Backend Server
+-Realtime Communication Server
+-MongoDB Database
+-Cloudinary Image Storage
+
+The backend server acts as the central system that handles:
+-Authentication
+-Business logic
+-Order processing
+-Delivery assignment
+-Payment processing
+-Realtime communication
 
 6. Platforms
 React Web Application
 The web application is designed specifically for administrators.
 Main functionalities include:
-User management
-Delivery driver management
-Food management
-Category management
-Order monitoring
-System administration
+-User management
+-Delivery driver management
+-Food management
+-Category management
+-Order monitoring
+-System administration
 
 Flutter Mobile Application
 The mobile application supports:
-Guest browsing
-Customer food ordering
-Delivery driver order management
-Realtime order updates
+-Guest browsing
+-Customer food ordering
+-Delivery driver order management
+-Realtime order updates
 
 7. Order Workflow
 The main workflow of the system is:
@@ -141,43 +159,43 @@ This pricing strategy helps balance delivery costs while maintaining a reasonabl
 9. Realtime Features
 SpeedFood uses Socket.IO for realtime communication.
 Realtime features include:
-New order notifications
-Order acceptance updates
-Delivery status updates
-Customer order tracking
+-New order notifications
+-Order acceptance updates
+-Delivery status updates
+-Customer order tracking
 
 10. Food Categories
 The platform supports multiple food categories such as:
-Rice
-Pho
-Noodles
-Drinks
-Fast Food
+-Rice
+-Pho
+-Noodles
+-Drinks
+-Fast Food
 Additional categories can be added by administrators.
 
 11. Technology Overview
 Frontend
-React.js
-Flutter
+-React.js
+-Flutter
 
 Backend
-Node.js
-Express.js
+-Node.js
+-Express.js
 
 Database
-MongoDB Atlas
+-MongoDB Atlas
 
 Realtime Communication
-Socket.IO
+-Socket.IO
 
 Image Storage
-Cloudinary
+-Cloudinary
 
 12. Future Improvements
 Possible future enhancements include:
-Online payment gateway integration
-GPS tracking system
-Push notifications
-AI-based food recommendations
-Dedicated delivery application for staffs
-Restaurant partner management
+-Online payment gateway integration
+-GPS tracking system
+-Push notifications
+-AI-based food recommendations
+-Dedicated delivery application for staffs
+-Restaurant partner management
